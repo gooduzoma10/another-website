@@ -44,7 +44,6 @@ function continueToResultPage() {
   
           const filePath = `${term}_${session}_${pin}.html`;
           window.open(filePath, "_blank");
-          window.open(`Federal Science And Technical College Awka-pdf.html?term=${term}&session=${session}&pin=${pin}`, '_blank');
         });
       });
     }
