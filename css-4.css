@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+margin-left:0; margin-bottom:0; margin-right:0; margin-top: 0;
+font-family:Arial, Helvetica, sans-serif; font-size:11px;
+}
+
+a.dark{text-decoration:none; color:#555555;}
+a.dark:visited{color:#555555;}
+a.dark:hover{text-decoration:underline; color:#555555;}
+
+a{text-decoration:none; color:#E1E1E1;}
+a:visited{color:#E1E1E1;}
+a:hover{text-decoration:underline; color:#FFFFFF;}
+
+.font_A{font-family:Arial, Helvetica, sans-serif; font-size:12px}
+
+SPAN.pipe{
+BORDER-LEFT:#555555 1px solid; BORDER-RIGHT: #AFCAE4 1px solid; display:inline; zoom: 1;
+}
+
+SPAN.tab{ background-color:#555555; color:#FFFFFF;
+}
+
+.missing {
+  color: red; font-family:Arial, Helvetica, sans-serif; font-size:10px;
+}
+
+.missing2 {
+  color: red; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+.error {
+  color: red; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+.button{
+/*background-color:#555555;
+color:#F3E9E9; border:solid; border-width:thin; border-color:gray;*/
+}
+
+.input{
+border-color:#555555; border:solid; color:#555555; border-width:thin;
+}
+
+.fieldText{
+color:#F3E9E9; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;
+}
+
+.fieldDarkText{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;
+}
+
+.fieldTextThin{
+color:#F3E9E9; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+.textLightSize1{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+.textDarkSize1{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+.textLightSize2{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:18px;
+}
+
+.textDarkSize2{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:18px;
+}
+
+.textLightSize3{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:24px;
+}
+
+.textDarkSize3{
+color:#555555; font-family:Arial, Helvetica, sans-serif; font-size:24px;
+}
+
+#topnav {
+	width: 100%;
+	background-color: #CCCCCC;
+	background-image: url(../_img/nav_bg.png);
+}
+
+/* CSS Document */
+
+
+#nav {
+	width: 100%;
+	height: 20px;
+	margin: 0;
+	background-image: url(images/bar.jpg);
+	background-repeat:repeat;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+
+	}
+/* Begin our secondary navigation styles */
+#menubar, #menubar ul {
+	float: none;
+	list-style: none;
+	line-height: 1em;
+	color: #FFFFFF;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+/*Setting default font*/
+#menubar a, #menubar a.menuitem,#menubar a.menu {
+	font-family:Tahoma;
+}
+
+/* -------------------------- */
+/* Here are the top secondary navigation links */
+#menubar a {
+	display: block;
+	color:#555555;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	text-align:left;
+	vertical-align:middle;
+}
+#menubar a.menu {
+	text-align: left;
+	font-size: 12px;
+	border-style:none;
+}
+
+#menubar span.cmenu {
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	text-align:left;
+	vertical-align:middle;
+	font-size: 12px;
+	border-style:none;
+	background-color: #680200;
+	font-family:Tahoma;
+}
+
+#menubar li {
+	float: left;
+	padding: 0;
+}
+/* -------------------------- */
+/* The dropdown links lists */
+#menubar li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 166px;
+	font-weight: normal;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background-color: #ccc;
+	margin: 0;
+	font-size: 11px;
+}
+#menubar li li {
+	padding: 0;
+	width: 150px;
+}
+#menubar li ul a {
+	padding: 8px;
+	width: 150px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+#menubar li:hover ul ul, #menubar li:hover ul ul ul, #menubar li.sfhover1 ul ul, #menubar li.sfhover1 ul ul ul {
+	left: -999em;
+}
+#menubar li:hover ul, #menubar li li:hover ul, #menubar li li li:hover ul, #menubar li.sfhover1 ul, #menubar li li.sfhover1 ul, #menubar li li li.sfhover1 ul {
+	left: auto;
+}
+/* -------------------------- */
+/* The background and color of the main nav link while looking at the dropdown
+   (a little different than the method used on the main nav...) */
+#menubar li:hover a.menu{
+	color: #fff;
+	background-color: #555;
+	/*background-color: #850A03;
+	background-image:url(links.jpg)*/
+}
+/* -------------------------- */
+/* The dropdown links list colors */
+#menubar li ul.submenu a {
+	background: #fff;
+	color: #555;
+}
+#menubar li ul.submenu a:hover {
+	color: #555;
+	background-color: #CED6DF;
+}
+/* -------------------------- */
+#content {
+	clear: left;
+}
+/* -------------------------- */
+
+p.css-vertical-text {
+	color:#000000;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	width:20px;
+	height:20px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:10px;
+	/*font-weight:bold;*/
+	/*text-shadow: 0px 0px 1px #333;*/
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+p.css-vertical-text-thin {
+	color:#333;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	width:20px;
+	height:20px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:11px;
+	/*text-shadow: 0px 0px 1px #333;*/
+
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+p.css-vertical-text2 {
+	color:#333;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	width:20px;
+	height:20px;
+	/*font-family: Verdana, Geneva, sans-serif;
+	font-size:8px;
+	font-weight:normal;*/
+	/*text-shadow: 0px 0px 1px #333;*/
+
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.curve_frame {
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	-ms-border-radius:8px;
+	border-radius:8px;
+	/*background-color:#EEEEEE;*/
+	border:1px solid #999;
+	text-align:left;
+	padding:2px;
+}
